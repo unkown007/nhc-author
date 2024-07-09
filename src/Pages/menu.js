@@ -21,7 +21,7 @@ const Menu = () => {
                 <div className="text-sm sm:text-lg text-center">Submeter Resumo</div>
               </Card>
             </Link>
-            <Link to="/resumo/lista">
+            <Link to="/resumos">
                 <Card
                     bordered={false}
                     hoverable

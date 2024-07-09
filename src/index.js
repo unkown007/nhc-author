@@ -9,6 +9,7 @@ import Signup from './Pages/Account/signup';
 import MainLayout from "./Layouts/MainLayout";
 import Menu from "./Pages/menu";
 import NewAbstract from "./Pages/Abstract/newAbstract";
+import ListAbstract from "./Pages/Abstract/listAbstract";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path:'/resumo/novo',
                 element: <NewAbstract/>,
+            },
+            {
+                path:'/resumos',
+                element: <ListAbstract />,
             },
         ]
     }
