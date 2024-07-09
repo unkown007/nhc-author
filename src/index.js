@@ -5,7 +5,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './Pages/Account/login';
+import Signup from './Pages/Account/signup';
 import MainLayout from "./Layouts/MainLayout";
+import Menu from "./Pages/menu";
+import NewAbstract from "./Pages/Abstract/newAbstract";
 
 const router = createBrowserRouter([
     {
@@ -13,12 +16,20 @@ const router = createBrowserRouter([
         element: <Login/>
     },
     {
+        path: '/account/signup',
+        element: <Signup />
+    },
+    {
         path: '/',
         element: <MainLayout/>,
         children: [
             {
                 path: '/',
-                element: <Login/>,
+                element: <Menu/>
+            },
+            {
+                path:'/resumo/novo',
+                element: <NewAbstract/>,
             },
         ]
     }
